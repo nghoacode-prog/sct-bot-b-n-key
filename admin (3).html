@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0a0e1a">
+  <title>Pawnova · Admin</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/admin.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js" defer></script>
+  <script src="/admin.js" defer></script>
+</head>
+<body>
+  <div id="login-error" class="login-error" hidden></div>
+  <div id="app" class="app" hidden>
+    <div class="mobile-scrim" id="scrim"></div>
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#dashboard" aria-label="Pawnova Admin"><span class="brand-mark"><span>🐾</span></span><span class="brand-copy"><b>PAWNOVA</b><small>CONTROL CENTER</small></span></a>
+      <div class="side-label">MENU CHÍNH</div>
+      <nav id="nav" aria-label="Điều hướng chính"></nav>
+      <div class="side-bottom"><div class="paw-float">🐾</div><div class="side-card"><span class="online-dot"></span><div><b>Hệ thống hoạt động</b><small>Bot Telegram · Online</small></div></div><div class="side-foot">PAWNOVA ADMIN <span>v1.0</span></div></div>
+    </aside>
+    <main class="main-area">
+      <header class="topbar"><button class="icon-btn menu-toggle" id="menu-toggle" aria-label="Mở menu">☰</button><div class="crumb"><span>Pawnova</span><i>/</i><b id="page-title">Dashboard</b></div><div class="top-actions"><span class="live-tag"><span class="online-dot"></span> LIVE</span><button class="icon-btn" id="refresh-btn" title="Làm mới">↻</button><div class="admin-chip"><div class="avatar" id="avatar">A</div><div><b id="admin-name">Quản trị viên</b><small id="admin-role">ADMIN</small></div><button class="icon-btn logout-btn" id="logout-btn" title="Đăng xuất">↗</button></div></div></header>
+      <section class="content" id="view" aria-live="polite"></section>
+      <footer class="footer"><span>© 2026 Pawnova · Telegram Bot Management</span><span>Made with <b>✦</b> in Vietnam</span></footer>
+    </main>
+    <div class="toast-stack" id="toasts" aria-live="polite"></div>
+    <div class="modal-wrap" id="modal-wrap" hidden><div class="modal-backdrop" data-close="1"></div><section class="modal" role="dialog" aria-modal="true"><header><h2 id="modal-title"></h2><button class="icon-btn" data-close="1" aria-label="Đóng">×</button></header><div id="modal-body"></div></section></div>
+  </div>
+</body>
+</html>
