@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PAWNOVA ADMIN</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/admin/static/admin.css">
+</head>
+<body>
+<header class="topbar">
+  <button id="burger" class="icon-btn" aria-label="Menu">☰</button>
+  <div class="brand">PAWNOVA <span>ADMIN</span></div>
+  <div class="spacer"></div>
+  <div class="online"><i class="pulse"></i><span>online</span></div>
+  <div class="chip mono" id="who">👤 …</div>
+  <button id="logout" class="icon-btn" title="Đăng xuất">⏻</button>
+</header>
+<div id="overlay"></div>
+<aside id="sidebar"><nav id="nav"></nav></aside>
+<main id="view"></main>
+<div id="toasts"></div>
+<div id="modals"></div>
+<script src="/admin/static/admin.js"></script>
+</body>
+</html>
