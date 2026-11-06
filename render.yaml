@@ -17,9 +17,16 @@ services:
         value: PawBanKey_Bot
       - key: GROUP_LINK
         sync: false
+      - key: PAYMENT_QR_URL
+        sync: false
+      - key: PAYMENT_QR_FILE_ID
+        sync: false
+      - key: PAYMENT_BANK_INFO
+        value: BIDV · NGUYEN VAN HOA · 8970267100
       - key: TELEGRAM_WEBHOOK_SECRET
         generateValue: true
       - key: APP_SECRET
         generateValue: true
       - key: DB_PATH
         value: bot.db
+        
